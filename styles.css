@@ -773,10 +773,10 @@ background:
 		transform: none;
 	}
 
-	.hero h1 {
-		font-size: 2rem;
-		line-height: 0.94;
-	}
+	    .hero h1 {
+        font-size: 1.6rem;
+        line-height: normal;
+    }
 
 	.hero-description {
 		max-width: 290px;
@@ -911,9 +911,10 @@ background:
 }
 
 @media (max-width: 360px) {
-	.hero h1 {
-		font-size: 42px;
-	}
+    .hero h1 {
+        font-size: 1.6rem;
+        line-height: normal;
+    }
 
 	.header-actions {
 		gap: 9px;
