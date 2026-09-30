@@ -28,7 +28,7 @@ const campaignSlides = [
 	},
 	{
 		image: 'images/model-02.jpg',
-		title: 'Your Next Rep.<br>Your New Gear.',
+		title: 'Train like a Beast.<br>Look like a Beauty.',
 		description: 'Technical training essentials designed to move with you.'
 	}
 ];
