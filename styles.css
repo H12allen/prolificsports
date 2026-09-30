@@ -664,8 +664,6 @@ button {
 	}
 
 	.site-header {
-		top: 25px;
-
 		height: 62px;
 
         display:flex;
@@ -691,6 +689,7 @@ button {
 
 	.main-nav {
 		position: absolute;
+		top: 62px;
 		right: 0;
 		left: 0;
 
