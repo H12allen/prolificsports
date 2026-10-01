@@ -739,7 +739,7 @@ background:
 	}
 
 	.hero {
-		height: min(620px, calc(100svh - 62px));
+		height: 100lvh;
 		max-height: none;
 	}
 
@@ -763,7 +763,6 @@ background:
 	}
 
 	.hero-copy {
-		top: auto;
 		bottom: 125px;
 
 		left: 6%;
