@@ -60,11 +60,12 @@ background:
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
 
 
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	 display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 30px;
 
-	padding: 0 7.5%;
+	padding: 0 5%;
 
 	color: #f3f1eb;
 	border-bottom: 1px solid rgb(255 255 255 / 16%);
@@ -75,9 +76,8 @@ background:
     height: auto;
     display: block;
     object-fit: contain;
-
-    object-fit: contain;
     object-position: center;
+	justify-self: start;
 
     filter: brightness(1.08) contrast(1.08);
 
@@ -90,16 +90,13 @@ background:
 	object-fit: contain;
 }
 
-.wordmark:hover {
-    transform: scale(1.03);
-    filter: brightness(1.15) contrast(1.1);
-}
 
 
 .main-nav {
 	display: flex;
 	align-items: center;
-	gap: 36px;
+	justify-content: center;
+	gap: 50px;
 	height: 100%;
 }
 
@@ -125,8 +122,39 @@ background:
 	background: #e9e6de;
 	content: '';
 }
+.contact {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+.contact-button {
+background : transparent;
+border:1px solid white;
+border-radius: 20px;
+font-size: 10px;
+padding: 5px 10px;
+}
 
-
+.contact-text {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: white;
+}
+.contact-butt {
+display:none;
+}
+i{
+	font-size: 20px;
+}
+.button{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid white;
+	background: transparent;
+	border-radius: 15px;
+	display:none;
+}
 
 .icon-button {
 	position: relative;
@@ -146,11 +174,11 @@ background:
 }
 
 .icon-button svg {
-	width: 16px;
-	height: 16px;
+	width: 20px;
+	height: 20px;
 	fill: none;
 	stroke: currentColor;
-	stroke-width: 1.15;
+	stroke-width: 1.5;
 }
 
 .bag-count {
@@ -428,7 +456,7 @@ background:
 
 .benefit strong {
 	display: block;
-
+	text-transform: uppercase;
 	margin-bottom: 4px;
 
 	font-family: var(--display);
@@ -441,8 +469,8 @@ background:
 
 	color: #b6b4ae;
 
-	font-size: 8px;
-	letter-spacing: 0.15px;
+	font-size: 10px;
+	letter-spacing: 0.5px;
 }
 
 /* --------------------------------------------------
@@ -706,7 +734,25 @@ background:
 
 		padding: 0 6%;
 	}
-
+	.butt{
+		display:flex;
+		align-items:center;
+		gap:10px;
+	}
+	.contact {
+		display: none;
+	}
+	.contact-butt {
+		background: transparent;
+		border: none;
+		display: flex;
+	}
+	.button{
+		display:block;
+		text-transform:uppercase;
+		font-size:12px;
+		margin-top:10px;
+	}
 
 	.menu-toggle {
 		display: grid;
@@ -743,7 +789,7 @@ background:
 	.main-nav a {
 		padding: 12px 0;
 
-		font-size: 11px;
+		font-size: 13px;
 	}
 
 	.main-nav a[aria-current="page"]::after {
@@ -830,7 +876,7 @@ background:
 	}
 
 	.benefit strong {
-		font-size: 13px;
+		font-size: 11px;
 	}
 
 	.benefit span {
@@ -878,14 +924,8 @@ background:
 			);
 	}
 
-	.collection-copy {
-		width: 84%;
-
-		padding: 48px 0 38px 7%;
-	}
-
 	.collection h2 {
-		font-size: 40px;
+		font-size: 1.6rem;
 	}
 
 	.collection p {
