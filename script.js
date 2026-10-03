@@ -1,17 +1,16 @@
 const menuToggle = document.querySelector('.menu-toggle');
 		const navigation = document.querySelector('.main-nav');
+		const closeMenuButton = document.querySelector('.button');
 		menuToggle.addEventListener('click', () => {
 			const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
 			menuToggle.setAttribute('aria-expanded', String(!isOpen));
 			menuToggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
-			navigation.classList.toggle('is-open', !isOpen);
+			navigation.classList.add('is-open', !isOpen);
 		});
-		navigation.addEventListener('click', (event) => {
-			if (event.target.closest('a')) {
-				navigation.classList.remove('is-open');
-				menuToggle.setAttribute('aria-expanded', 'false');
-				menuToggle.setAttribute('aria-label', 'Open menu');
-			}
+		closeMenuButton.addEventListener('click', (event) => {
+			navigation.classList.remove('is-open');
+			menuToggle.setAttribute('aria-expanded', 'false');
+			menuToggle.setAttribute('aria-label', 'Open menu');
 		});
 
 
@@ -28,7 +27,7 @@ const campaignSlides = [
 	},
 	{
 		image: 'images/model-02.jpg',
-		title: 'Train like a Beast.<br>Look like a Beauty.',
+		title: 'Train like a beast.<br>Look like a beauty.',
 		description: 'Technical training essentials designed to move with you.'
 	}
 ];
